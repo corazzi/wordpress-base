@@ -21,7 +21,7 @@
       "mv wp-cli.phar wp",
       "wp core download --locale=en_GB",
       "wp core version",
-      "echo '\nrequire(''vendor/autoload.php'');\n\n$dotenv = new Dotenv\\Dotenv(__DIR__);\n$dotenv->load();' >> index.php"
+      "echo '\nrequire(\"vendor/autoload.php\");\n\n$dotenv = new Dotenv\\Dotenv(__DIR__);\n$dotenv->load();' >> index.php"
     ]
   }
 }
