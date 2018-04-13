@@ -13,7 +13,8 @@
       "email": "sacha.corazzi@gmail.com"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "scripts": {
     "post-create-project-cmd": [
       "curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar",
