@@ -20,7 +20,8 @@
       "curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar",
       "mv wp-cli.phar wp",
       "wp core download --locale=en_GB",
-      "wp core version"
+      "wp core version",
+      "echo '\nrequire(''vendor/autoload.php'');\n\n$dotenv = new Dotenv\\Dotenv(__DIR__);\n$dotenv->load();' >> index.php"
     ]
   }
 }
