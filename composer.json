@@ -1,0 +1,25 @@
+{
+  "name": "corazzi/wordpress-base",
+  "description": "A base WordPress installation on steroids.",
+  "type": "project",
+  "require": {
+    "tightenco/collect": "^5.6",
+    "vlucas/phpdotenv": "^2.4"
+  },
+  "license": "Unlicensed",
+  "authors": [
+    {
+      "name": "Sacha Corazzi",
+      "email": "sacha.corazzi@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "scripts": {
+    "post-create-project-cmd": [
+      "curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar",
+      "mv wp-cli.phar wp",
+      "wp core download --locale=en_GB",
+      "wp core version"
+    ]
+  }
+}
