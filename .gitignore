@@ -3,3 +3,5 @@
 *.DS_Store
 /wp-content
 /wp-admin
+*/node_modules/
+*/assets/images/placeholders/
